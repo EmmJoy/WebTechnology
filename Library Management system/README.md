@@ -38,5 +38,6 @@ Takes two numbers and returns the sum.
 
 ## Screenshots
 
+![image](https://github.com/EmmJoy/WebTechnology/assets/124621939/b7ea46ed-ecac-4587-873d-baedab3f4471)
 
 
