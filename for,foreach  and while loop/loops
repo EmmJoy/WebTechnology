@@ -1,0 +1,26 @@
+<?php
+$arr = array("Joy", "Tamim", "jesan", "Nazmul", "Lemon");
+for ($i = 0; $i < count($arr); $i++) {
+    echo $arr[$i] . "<br>";
+}
+
+echo "<br><br>";
+?>
+
+
+<?php
+$arr = array("Joy", "Tamim", "jesan", "Nazmul", "Lemon");
+foreach ($arr as $value) {
+    echo "The Value for foreach loop is  :  " . $value . "<br>";
+}
+echo "<br><br>";
+?>
+
+
+
+<?php
+$a = 0;
+while ($a <= 20) {
+    echo  "Your Value Is  :  " . $a++ . "<br>";
+}
+?>
