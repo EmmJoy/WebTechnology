@@ -1,0 +1,148 @@
+/*Login page*/
+.button-85 {
+  padding: 0.6em 2em;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 20px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-85:before {
+  content: "";
+  background: linear-gradient(45deg,
+      #ff0000,
+      #ff7300,
+      #fffb00,
+      #48ff00,
+      #00ffd5,
+      #002bff,
+      #7a00ff,
+      #ff00c8,
+      #ff0000);
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 20px;
+}
+
+@keyframes glowing-button-85 {
+  0% {
+    background-position: 0 0;
+  }
+
+  50% {
+    background-position: 400% 0;
+  }
+
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.button-85:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #222;
+  left: 0;
+  top: 0;
+  border-radius: 20px;
+}
+
+
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 100%;
+  padding: 34px;
+  margin: auto;
+}
+
+.container h1 {
+  text-align: center;
+  font-family: "Bungee Spice", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.container p {
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  text-emphasis-color: rgb(228, 207, 18);
+}
+
+p {
+  font-size: 21px;
+
+}
+
+input, textarea {
+  display: block;
+  border: 2px solid black;
+  border-radius: 6px;
+  outline: none;
+  font-size: 16px;
+  width: 100%; /* Make the width 100% within the container div */
+  padding: 7px;
+  box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+}
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+form div {
+  width: 80%; /* Set a consistent width for the container divs */
+  display: flex;
+  flex-direction: column; /* Change to column for a better alignment */
+  margin: 11px 0; /* Adjust margin to control spacing between form groups */
+}
+
+label {
+  margin-bottom: 5px; /* Add space between the label and the input field */
+  text-align: left;
+  font-size: 28px;
+}
+
+
+
+/*background*/
+body {
+  background-image: url(http://www.hdwallpapers.in/walls/star_trail-wide.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attach: fixed;
+  animation: animate-bg 50s infinite linear;
+}
+
+@keyframes animate-bg {
+  from { background-size: 100%; background-position: 0% 0%; }
+  50% { background-size: 120%; background-position: 0% 20% }
+  to { background-size: 100%; background-position: 0% 0%; }
+}
